@@ -1,0 +1,65 @@
+/** @format */
+
+/* medias querys */
+@media only screen and (max-width: 798px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .showcase,
+  .showcase header {
+    padding: 2rem;
+  }
+
+  .nav_menu {
+    display: none;
+  }
+
+  .btn_menu {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background: url("/img/menu.png");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position: center;
+    cursor: pointer;
+
+    display: flex;
+  }
+
+  .text h2 {
+    font-size: 3.5rem;
+  }
+
+  .text h3 {
+    font-size: 1.6rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .text a {
+    background-color: #e9b44c;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .nav_menu {
+    display: none;
+  }
+
+  .btn_menu {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background: url("/img/menu.png");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position: center;
+    cursor: pointer;
+
+    display: flex;
+  }
+}

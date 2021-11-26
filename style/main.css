@@ -1,0 +1,254 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Nixie+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #111;
+  color: #fff;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.showcase.active {
+  right: 30rem;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem 0.5rem 5rem;
+  background-color: rgba(8, 65, 92, 0.626);
+  border-bottom: 1px solid #e9b44c;
+}
+
+.logo {
+  width: 18rem;
+  height: 6rem;
+  margin-right: 2.5rem;
+}
+
+.showcase .logo_img {
+  position: relative;
+  width: 18rem;
+  height: 6rem;
+  object-fit: contain;
+}
+
+.nav_menu {
+  display: flex;
+  margin: 1.8rem 0 1.8rem auto;
+}
+
+.nav_menu ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav_menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.nav_menu ul li a:hover {
+  color: #e9b44c;
+}
+
+.nav_menu ul li a.menu-link_contacto {
+  color: #e9b44c;
+}
+
+.btn_menu {
+  display: none;
+}
+
+.btn_menu.active {
+  background: url("/img/close.png");
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  background-position: center;
+  cursor: pointer;
+}
+
+.showcase img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* opacity: 0.9; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 65, 92, 0.208) 0%,
+    rgba(28, 17, 10, 0.208) 100%
+  );
+  mix-blend-mode: overlay;
+}
+
+.active_overlay {
+  z-index: 11;
+}
+
+.text {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.287);
+  padding: 3rem 1.5rem;
+}
+
+.text h2 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #e9b44c;
+}
+
+.text p {
+  letter-spacing: 0.75px;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  font-weight: 400;
+  max-width: 65rem;
+  line-height: 1.6;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #e9b44c;
+  border: solid 1px #e9b44c;
+  color: #fff;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: 0.3s;
+}
+
+.text a:hover {
+  letter-spacing: 0.3rem;
+}
+
+.social {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 9999;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  width: 2.6rem;
+  height: 2.6rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.ion_icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  fill: #fff;
+}
+
+.social li a:hover {
+  transform: translateY(-5px);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgoldenrod;
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 2.6rem;
+  color: #e9b44c;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+}
+
+.menu ul li a.menu-link_contacto {
+  color: #fff;
+}
+
+/* Clases para el video de fondo */
+/* .showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+} */
