@@ -19,7 +19,8 @@ html {
   position: absolute;
   right: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 49rem;
   padding: 10rem;
   display: flex;
   flex-direction: column;
@@ -131,6 +132,7 @@ html {
 
 .active_overlay {
   z-index: 11;
+  background-color: rgba(17, 17, 17, 0.461);
 }
 
 .text {
@@ -207,12 +209,13 @@ html {
 
 .social {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   z-index: 9999;
+  padding: 1.5rem;
 }
 
 .social li {
@@ -242,7 +245,8 @@ html {
   top: 0;
   right: 0;
   width: 30rem;
-  height: 100%;
+  height: 100vh;
+  min-height: 49rem;
   display: flex;
   align-items: center;
   justify-content: center;

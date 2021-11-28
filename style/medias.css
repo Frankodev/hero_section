@@ -43,23 +43,23 @@
   .text a {
     background-color: #e9b44c;
   }
+}
 
-  @media only screen and (max-height: 450px) {
-    .nav_menu {
-      display: none;
-    }
+@media only screen and (max-height: 450px) {
+  .nav_menu {
+    display: none;
+  }
 
-    .btn_menu {
-      position: relative;
-      width: 6rem;
-      height: 6rem;
-      background: url("/img/menu.png");
-      background-repeat: no-repeat;
-      background-size: 3rem;
-      background-position: center;
-      cursor: pointer;
+  .btn_menu {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background: url("/img/menu.png");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position: center;
+    cursor: pointer;
 
-      display: flex;
-    }
+    display: flex;
   }
 }
