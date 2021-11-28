@@ -136,6 +136,7 @@ html {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.287);
   padding: 3rem 1.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .text h2 {
@@ -162,21 +163,44 @@ html {
 }
 
 .text a {
-  display: inline-block;
+  display: inline-flex;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
-  background-color: #e9b44c;
-  border: solid 1px #e9b44c;
   color: #fff;
-  padding: 1rem 3rem;
+  width: 19rem;
+  height: 4rem;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  transition: 0.3s;
+  letter-spacing: 0.3rem;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9b44c;
+  overflow: hidden;
 }
 
-.text a:hover {
-  letter-spacing: 0.3rem;
+.text a::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 100%;
+  border-bottom: 4rem solid rgba(255, 255, 255, 0.297);
+  border-right: 4rem solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.text a:hover::after {
+  right: calc(-100% - 4rem);
+}
+
+.text a span {
+  position: relative;
+  z-index: 2;
+
+  /* transition: 0.3s ease all; */
 }
 
 .social {
