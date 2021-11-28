@@ -9,7 +9,7 @@ const overlay = document.querySelector(".overlay");
 btn_menu.addEventListener("click", function () {
   btn_menu.classList.toggle("active");
   showcase.classList.toggle("active");
-  overlay.classList.add("active_overlay");
+  overlay.classList.toggle("active_overlay");
 });
 
 // función click para quitar el menú responsive con el overlay
