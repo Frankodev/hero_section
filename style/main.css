@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Nixie+One&display=swap");
 
+/* ******************* */
+/* Index */
+/* ******************* */
+
 * {
   margin: 0;
   padding: 0;
@@ -45,9 +49,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem 0.5rem 5rem;
-  background-color: rgba(8, 65, 92, 0.626);
-  border-bottom: 1px solid #e9b44c;
+  padding: 2.5rem 5rem 0.5rem 5rem;
+  /* background-color: rgba(8, 65, 92, 0.626); */
+  /* border-bottom: 1px solid #e9b44c; */
 }
 
 .logo {
@@ -112,8 +116,8 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  /* opacity: 0.9; */
+  opacity: 0.6;
+  z-index: 0;
 }
 
 .overlay {
@@ -138,20 +142,20 @@ html {
 .text {
   position: absolute;
   z-index: 10;
-  background-color: rgba(8, 65, 92, 0.226);
+  /* background-color: rgba(8, 65, 92, 0.226); */
   padding: 3rem 1.5rem;
   transition: all 0.3s ease-in-out;
 }
 
 .text h2 {
-  font-size: 6.4rem;
+  font-size: 5.2rem;
   font-weight: 700;
   line-height: 5rem;
   text-transform: uppercase;
 }
 
 .text h3 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #e9b44c;
@@ -162,7 +166,7 @@ html {
   font-size: 1.2rem;
   margin: 2rem 0;
   font-weight: 400;
-  max-width: 65rem;
+  max-width: 55rem;
   line-height: 1.6;
 }
 
@@ -172,6 +176,7 @@ html {
   font-weight: 800;
   text-decoration: none;
   color: #333;
+  color: #fff;
   width: 19rem;
   height: 4rem;
   text-transform: uppercase;
@@ -180,7 +185,8 @@ html {
   z-index: 2;
   align-items: center;
   justify-content: center;
-  background-color: #e9b44c;
+  /* background-color: #e9b44c; */
+  border: #e9b44c 0.5px solid;
   overflow: hidden;
 }
 
@@ -209,8 +215,11 @@ html {
 
 .social {
   position: absolute;
-  bottom: 1rem;
+  bottom: 50%;
+  right: 0;
+  transform: translate(0, 50%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -272,8 +281,11 @@ html {
   color: #fff;
 }
 
-/* Clases para el video de fondo */
-/* .showcase video {
+/* ******************* */
+/* Video y controles */
+/* ******************* */
+
+.showcase video {
   position: absolute;
   top: 0;
   left: 0;
@@ -281,16 +293,37 @@ html {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
-} */
-
-/* ******************* */
-/* Proyecto  */
-/* ******************* */
-
-h1 {
-  font-size: 4.6rem;
 }
 
-section h2 {
-  font-size: 2.3rem;
+.control_audio {
+  position: absolute;
+  left: 5rem;
+  bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 9999;
+  padding: 1.5rem;
+}
+
+.control_audio li {
+  list-style: none;
+  width: 2.6rem;
+  height: 2.6rem;
+  transition: all 0.3s ease;
+}
+
+.control_audio li:hover {
+  transform: translateY(-3px);
+}
+
+.control_audio li .icon_audio {
+  width: 2.6rem;
+  height: 2.6rem;
+  cursor: pointer;
+}
+
+.img-display-none {
+  /* display: none; */
 }
