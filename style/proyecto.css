@@ -1,0 +1,170 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Nixie+One&display=swap");
+
+/* ******************* */
+/* Proyecto */
+/* ******************* */
+
+:root {
+  --color-principal: #e9b44c;
+  --color-secundario: #444444;
+  --color-bgc-principal: #353535;
+  --color-bgc-secundario: #e5e2e2;
+  --color-textos: #333333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* ******************* */
+/* Proyecto */
+
+.proyecto {
+  background-color: var(--color-bgc-principal);
+  padding-bottom: 4rem;
+}
+
+.proyecto h1 {
+  color: var(--color-principal);
+  position: relative;
+}
+
+.proyecto h1::after {
+  content: "";
+  border-bottom: solid 1px var(--color-principal);
+  width: 20%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.proyecto_img {
+  width: 85vw;
+  min-height: 80vh;
+  margin: auto;
+  padding: 3rem 0 5rem 0;
+}
+
+.proyecto_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.proyecto_descripcion {
+  width: 85vw;
+  margin: auto;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+/* ******************* */
+/* Amenidades */
+
+.amenidades {
+  background-color: var(--color-bgc-secundario);
+  padding-bottom: 4rem;
+}
+
+.amenidades h1 {
+  color: var(--color-secundario);
+  position: relative;
+}
+
+.amenidades h1::after {
+  content: "";
+  border-bottom: solid 1px var(--color-secundario);
+  width: 20%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* ******************* */
+/* Planta */
+
+.planta {
+  background-color: var(--color-bgc-principal);
+  padding-bottom: 4rem;
+}
+
+.planta h1 {
+  color: var(--color-principal);
+  position: relative;
+}
+
+.planta h1::after {
+  content: "";
+  border-bottom: solid 1px var(--color-principal);
+  width: 20%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.planta_container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+.planta_img {
+  width: 70%;
+}
+
+.planta_img img {
+  width: 100%;
+}
+
+.planta_descripcion {
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.planta_descripcion h3 {
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+
+.planta_descripcion ul {
+  list-style: none;
+}
+
+.planta_descripcion ul li span {
+  font-size: 2.1rem;
+  color: var(--color-principal);
+}
+
+.planta_descripcion ul li {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
