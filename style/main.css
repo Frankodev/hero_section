@@ -249,6 +249,10 @@ html {
   transform: translateY(-5px);
 }
 
+.social li a .youtube {
+  fill: crimson;
+}
+
 .menu {
   position: absolute;
   top: 0;
