@@ -253,6 +253,10 @@ html {
   fill: crimson;
 }
 
+.social li a .instagram {
+  fill: darkmagenta;
+}
+
 .menu {
   position: absolute;
   top: 0;
