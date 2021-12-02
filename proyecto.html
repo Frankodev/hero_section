@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="./style/normalize.css?Dic1" />
     <link rel="stylesheet" href="./style/proyecto.css?Dic1" />
+    <link rel="stylesheet" href="./style/medias.css?Dic1" />
 
     <!-- Ion Icons -->
     <script
@@ -38,9 +39,62 @@
       content="RESIDENCIAL PACIFICO DIAMANTE es más que un lugar para vivir y vacacionar, es un lugar en donde volverás a descubrir, sentir y soñar, rodeado de la deslumbrante belleza entre la laguna y el mar de la Riviera Diamante de Acapulco. | Departamentos en venta y renta | Departamentos de Lujo en Acapulco | Playa Bonfil | Barra Vieja"
     />
   </head>
-  <body>
-    <section class="container proyecto">
-      <h1>Isla Tortuga</h1>
+
+  <body class="show">
+    <!-- Sección Header -->
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <img
+          class="logo_img"
+          src="/img/logo.png"
+          alt="Logo Pacífico Diamante Residencial"
+        />
+      </div>
+
+      <!-- Menú -->
+      <nav class="nav_menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#proyecto">Proyecto</a></li>
+          <li><a href="#amenidades">Amenidades</a></li>
+          <li><a href="#planta">Planta</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Avances</a></li>
+          <li>
+            <a
+              class="menu-link_contacto"
+              href="https://www.facebook.com/Pac%C3%ADfico-Diamante-103369688852418"
+              >Contáctanos</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="btn_menu"></div>
+
+      <!-- Menú responsive - Hamburguesa -->
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#proyecto">Proyecto</a></li>
+          <li><a href="#amenidades">Amenidades</a></li>
+          <li><a href="#planta">Planta</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Avances</a></li>
+          <li>
+            <a
+              class="menu-link_contacto"
+              href="https://www.facebook.com/Pac%C3%ADfico-Diamante-103369688852418"
+              >Contáctanos</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Sección Proyecto -->
+    <section id="proyecto" class="container proyecto">
+      <h1>Etapa Isla Tortuga</h1>
       <div class="proyecto_img">
         <img
           src="/img/proyecto/proyecto_maestro_01.jpeg"
@@ -49,20 +103,21 @@
       </div>
       <div class="proyecto_descripcion">
         <p>
-          Quisque dapibus blandit velit, eget lacinia metus. Curabitur aliquam
-          cursus rutrum. Aenean vel ligula odio. Suspendisse tincidunt justo
-          lorem, quis malesuada enim eleifend nec. Duis convallis nisl ut
-          eleifend condimentum. Aliquam nec elementum elit, a scelerisque mi.
-          Quisque ut venenatis purus. Vivamus ac leo a erat dapibus auctor et a
-          mauris. Sed auctor ornare lacinia. Donec dapibus neque sapien, et
-          tristique libero pellentesque eu.
+          PACIFICO DIAMANTE es más que un lugar para vivir y vacacionar, es un
+          lugar en donde volverás a descubrir, sentir y soñar, rodeado de la
+          deslumbrante belleza entre la laguna y el mar de la Riviera Diamante
+          de Acapulco.
         </p>
       </div>
     </section>
-    <section class="container amenidades">
+
+    <!-- Sección Amenidades -->
+    <section id="amenidades" class="container amenidades">
       <h1>Amenidades</h1>
     </section>
-    <section class="container planta">
+
+    <!-- Sección Planta -->
+    <section id="planta" class="container planta">
       <h1>Planta Tipo</h1>
       <div class="planta_container">
         <div class="planta_img">
@@ -120,5 +175,7 @@
         </div>
       </div>
     </section>
+
+    <script src="/js/proyecto.js"></script>
   </body>
 </html>
