@@ -12,17 +12,24 @@ Facebook > https://www.facebook.com/Pac%C3%ADfico-Diamante-103369688852418
 
 Diseño y desarrollo > https://webcreativa.mx/
 
-NOTA: 27 de Nov del 2021, la Landing Page aun se encuentra en construcción por lo que el repositorio estara mostrando muchos cambios, saludos...
+NOTA PARA MOSTRAR EN EL SITIO WEB: 27 de Nov del 2021, la Landing Page aun se encuentra en construcción por lo que el repositorio estara mostrando muchos cambios, saludos...
 
-Tareas 1 Dic 2021; ((PENDIENTE TODO -> 12:00pm))
-0.- Actualizar las redes sociales con fotos y videos, para poder continuar con la sección del Proyecto. ((Completado))
-0.1.- Hacer un pop-up para que aprezca cuando el usuario de click en un enlace de la pagina, (Algunas secciones se encuentran en construcción, nos esforzamos para brindarte la mejor experiencia en tu visita, Gracias...! Más información, Telefono 744 123 4455)
-1.- Conectar los enlaces de los menús a la sección de Proyecto
-2.- Continuar con la construcción de la sección Proyecto
-3.- En la sección Proyecto hacer la función para visualizar el overlay con
-las fotos de las secciones del conjunto general y del departamento planta tipo.
-4.- Optimizar las imagenes reducir el tamaño de los archivos.
+------------------ > \*\*\* <---------------------
+Tareas 1 Dic 2021; ((COMPLETO TODO -> 2 Dic, 12:00pm))
+0.- Actualizar las redes sociales con fotos y videos, para poder continuar con la sección del Proyecto. (hecho)
 
-16:43pm ->
-1.- Hacer menú nav sticky
-2.- Hacer menú responsive - ver código web creativa
+1.- Conectar los enlaces de los menús a la sección de Proyecto (hecho)
+2.- Continuar con la construcción de la sección Proyecto (hecho)
+
+16:43pm -> ((COMPLETO TODO -> 2 Dic, 12:00pm))
+1.- Hacer menú nav sticky (hecho)
+2.- Hacer menú responsive - ver código web creativa (hecho)
+
+Tareas 2 Dic 2021; ((PENDIENTE TODO -> 12:00pm)) #f1f
+0.- Hacer 2 funciónes forEach para quitar el menú responsive al hacer click en un enlace de la página, hacerlo en la pagina de proyecto y en landing page. (((hecho)))
+
+1.- Hacer un pop-up para que aprezca cuando el usuario de click en un enlace de la pagina, (Algunas secciones se encuentran en construcción, nos esforzamos para brindarte la mejor experiencia en tu visita, Gracias...! Más información, Telefono 744 123 4455).
+
+2.- En la sección Proyecto hacer la función para visualizar el overlay con las fotos de las secciones del conjunto general y del departamento planta tipo. #f1f
+
+3.- Optimizar las imagenes reducir el tamaño de los archivos.

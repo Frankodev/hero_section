@@ -49,7 +49,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 5rem 0.5rem 5rem;
+  padding: 2.5rem 2rem 0.5rem 2rem;
   /* background-color: rgba(8, 65, 92, 0.626); */
   /* border-bottom: 1px solid #e9b44c; */
 }

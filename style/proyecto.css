@@ -34,7 +34,7 @@ body {
 }
 
 .showBody {
-  right: 30rem;
+  right: 0;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h1 {
 section {
   min-width: 100vw;
   min-height: 100vh;
-  padding: 8rem 1rem 2rem 1rem;
+  padding: 10rem 1rem 2rem 1rem;
   overflow-x: hidden;
 }
 
@@ -59,13 +59,12 @@ section {
   left: 0;
   width: 100%;
   height: 8rem;
-  z-index: 9999;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 5rem;
-  background-color: var(--color-bgc-principal);
-  /* border-bottom: solid 1px var(--color-principal); */
+  padding: 5rem 2rem;
+  background-color: rgba(53, 53, 53, 0.301);
 }
 
 .logo {
@@ -79,10 +78,6 @@ section {
   width: 18rem;
   height: 6rem;
   object-fit: contain;
-}
-
-.showBody .header .logo_img {
-  left: -30rem;
 }
 
 .nav_menu {
@@ -134,7 +129,7 @@ section {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -30rem;
   width: 30rem;
@@ -152,6 +147,7 @@ section {
   display: flex;
   right: 0;
   overflow: hidden;
+  z-index: 9999;
 }
 
 .menu ul {
@@ -178,6 +174,23 @@ section {
 }
 
 /* ******************* */
+/* Overlay - Menú responsive */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  mix-blend-mode: overlay;
+}
+
+.active_overlay {
+  z-index: 11;
+  background-color: rgba(17, 17, 17, 0.461);
+}
+
+/* ******************* */
 /* Proyecto */
 
 .proyecto {
@@ -188,6 +201,7 @@ section {
 .proyecto h1 {
   color: var(--color-principal);
   position: relative;
+  margin: 5rem 0 7rem 0;
 }
 
 .proyecto h1::after {
@@ -195,21 +209,39 @@ section {
   border-bottom: solid 1px var(--color-principal);
   width: 20%;
   position: absolute;
-  bottom: -10px;
+  bottom: -8px;
   left: 50%;
   transform: translate(-50%);
 }
 
 .proyecto_img {
   width: 85vw;
-  /* min-height: 80vh; */
-  margin: auto;
-  padding: 3rem 0;
+  margin: 3rem auto;
+  z-index: 2;
+  position: relative;
 }
 
 .proyecto_img img {
   width: 100%;
   height: 100%;
+}
+
+/* ******************* */
+/* Modal de fotos proyecto */
+.profocus {
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: var(--color-principal);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.proyecto__contenedor_img {
+  display: flex;
 }
 
 .proyecto_descripcion {
@@ -309,7 +341,13 @@ section {
 }
 
 /* medias querys */
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
   .planta_container {
     flex-direction: column;
     align-items: center;
@@ -318,6 +356,16 @@ section {
 
   .planta_container {
     min-height: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  /* funciona para quitar el logo al abrir menu hamburguesa */
+  .showBody .header .logo_img {
+    left: -30rem;
   }
 }
 
