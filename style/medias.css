@@ -1,6 +1,6 @@
 /** @format */
 
-/* medias querys */
+/* Lnading Page */
 @media only screen and (max-width: 798px) {
   html {
     font-size: 56.25%;
@@ -68,5 +68,13 @@
     cursor: pointer;
 
     display: flex;
+  }
+
+  /* .btn_menu.active {
+    right: 27%;
+  } */
+
+  .menu ul li {
+    margin: 0.5rem 0;
   }
 }
