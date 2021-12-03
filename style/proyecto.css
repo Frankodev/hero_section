@@ -46,7 +46,7 @@ h1 {
 
 section {
   min-width: 100vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 10rem 1rem 2rem 1rem;
   overflow-x: hidden;
 }
@@ -237,7 +237,7 @@ section {
 .proyecto_descripcion {
   width: 85vw;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
   color: var(--color-bgc-secundario);
   font-size: 1.8rem;
   letter-spacing: 0.75px;
@@ -321,7 +321,7 @@ section {
   align-items: center;
   justify-content: space-evenly;
   margin: 7rem 0;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .planta_img {
@@ -336,6 +336,7 @@ section {
 .planta_descripcion {
   color: var(--color-bgc-secundario);
   width: 40%;
+  margin: 0 2rem 0 0;
 }
 
 .planta_descripcion h3 {

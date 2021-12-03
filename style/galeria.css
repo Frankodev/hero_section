@@ -18,7 +18,7 @@
 
 .galeria {
   background-color: var(--color-bgc-secundario);
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 .galeria h1 {
@@ -39,9 +39,10 @@
 /* Galeria */
 #galery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 70rem;
+  /* max-width: 70rem; */
+  width: 85vw;
   min-width: 40rem;
   padding: 0 1rem;
   margin: auto;
@@ -54,15 +55,6 @@
   height: auto;
   border-radius: 4px;
   cursor: pointer;
-}
-
-/* medias querys */
-@media only screen and (max-width: 768px) {
-  #galery {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-  }
 }
 
 /* Contenedor Principal */
@@ -144,4 +136,21 @@ button span {
 #btn-adelanta {
   top: 50%;
   right: 1rem;
+}
+
+/* medias querys */
+@media only screen and (max-width: 1024px) {
+  #galery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #galery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
 }
