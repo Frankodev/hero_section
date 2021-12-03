@@ -184,9 +184,11 @@ section {
   height: 100%;
   background-color: transparent;
   mix-blend-mode: overlay;
+  display: none;
 }
 
 .active_overlay {
+  display: flex;
   z-index: 11;
   background-color: rgba(17, 17, 17, 0.461);
 }
@@ -219,6 +221,8 @@ section {
   margin: 3rem auto;
   z-index: 2;
   position: relative;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .proyecto_img img {

@@ -34,9 +34,12 @@ Tareas 2 Dic 2021; ((COMPLETO TODO -> 3 Dic, 10:28am))
 
 Tareas 3 Dic 2021; ((PENDIENTE TODO -> 10:28am)) #f1f
 
-1.- Hacer sección de galería de imágenes, amenidades y interior del departamento. #f1f
-2.- Conectar los focus para que vallan a la sección de galeria (PROVISIONAL YA QUE TENDRAN SU MODAL)
+1.- Hacer sección de galería de imágenes, amenidades e interior del departamento. Inicio -> 11:20am -> FIN 2:49pm
 3.- Optimizar las imagenes reducir el tamaño de los archivos.
+2.- Conectar los focus para que vallan a la sección de galeria (PROVISIONAL YA QUE TENDRAN SU MODAL) #f1f
 4.- HACER TODAS LAS PRUEBAS PARA ECONFIRMAR DESPLIEGUE
+
+NOTAS adicionales posteriores al despliegue del dia 3 Nov 21 -> ((PENDIENTE TODO))
+1.- Hacer una función para que al terminar el video se quite y se ponga una imagen estatica de la alberca - es opcional no requerimiento del cliente.
 
 16:43pm -> video para hacer efecto de luz en botones para abrir overlay con fotos tarea 2: https://www.youtube.com/watch?v=r_RXm5NyBo0
