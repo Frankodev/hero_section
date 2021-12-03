@@ -1,0 +1,27 @@
+/**
+ * /* *******************
+ *
+ * @format
+ */
+
+/* galeria */
+
+.galeria {
+  background-color: var(--color-bgc-secundario);
+  padding-bottom: 4rem;
+}
+
+.galeria h1 {
+  color: var(--color-secundario);
+  position: relative;
+}
+
+.galeria h1::after {
+  content: "";
+  border-bottom: solid 1px var(--color-secundario);
+  width: 20%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}

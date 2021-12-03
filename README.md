@@ -25,13 +25,18 @@ Tareas 1 Dic 2021; ((COMPLETO TODO -> 2 Dic, 12:00pm))
 1.- Hacer menú nav sticky (hecho)
 2.- Hacer menú responsive - ver código web creativa (hecho)
 
-Tareas 2 Dic 2021; ((PENDIENTE TODO -> 12:00pm)) #f1f
-0.- Hacer 2 funciónes forEach para quitar el menú responsive al hacer click en un enlace de la página, hacerlo en la pagina de proyecto y en landing page. (((hecho)))
+Tareas 2 Dic 2021; ((COMPLETO TODO -> 3 Dic, 10:28am))
+0.- Hacer 2 funciónes forEach para quitar el menú responsive al hacer click en un enlace de la página, hacerlo en la pagina de proyecto y en landing page. (hecho)
 
-1.- Hacer un pop-up para que aprezca cuando el usuario de click en un enlace de la pagina, (Algunas secciones se encuentran en construcción, nos esforzamos para brindarte la mejor experiencia en tu visita, Gracias...! Más información, Telefono 744 123 4455).
+1.- Hacer un pop-up para que aprezca cuando el usuario de click en un enlace de la pagina, (Algunas secciones se encuentran en construcción, Gracias...! Más información, Telefono 744 123 4455). (hecho)
 
-2.- En la sección Proyecto hacer la función para visualizar el overlay con las fotos de las secciones del conjunto general y del departamento planta tipo. #f1f
+2.- En la sección Proyecto hacer la función para visualizar el overlay con las fotos de las secciones del conjunto general y del departamento planta tipo. (hecho)
 
+Tareas 3 Dic 2021; ((PENDIENTE TODO -> 10:28am)) #f1f
+
+1.- Hacer sección de galería de imágenes, amenidades y interior del departamento. #f1f
+2.- Conectar los focus para que vallan a la sección de galeria (PROVISIONAL YA QUE TENDRAN SU MODAL)
 3.- Optimizar las imagenes reducir el tamaño de los archivos.
+4.- HACER TODAS LAS PRUEBAS PARA ECONFIRMAR DESPLIEGUE
 
 16:43pm -> video para hacer efecto de luz en botones para abrir overlay con fotos tarea 2: https://www.youtube.com/watch?v=r_RXm5NyBo0
