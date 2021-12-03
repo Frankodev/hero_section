@@ -33,3 +33,5 @@ Tareas 2 Dic 2021; ((PENDIENTE TODO -> 12:00pm)) #f1f
 2.- En la sección Proyecto hacer la función para visualizar el overlay con las fotos de las secciones del conjunto general y del departamento planta tipo. #f1f
 
 3.- Optimizar las imagenes reducir el tamaño de los archivos.
+
+16:43pm -> video para hacer efecto de luz en botones para abrir overlay con fotos tarea 2: https://www.youtube.com/watch?v=r_RXm5NyBo0

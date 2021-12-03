@@ -41,6 +41,7 @@ h1 {
   font-size: 4.8rem;
   text-align: center;
   text-transform: uppercase;
+  margin: 0 0 10rem 0;
 }
 
 section {
@@ -96,7 +97,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--color-bgc-secundario);
   padding: 0.2rem 0.4rem;
   transition: all 0.3s ease;
 }
@@ -201,7 +202,6 @@ section {
 .proyecto h1 {
   color: var(--color-principal);
   position: relative;
-  margin: 5rem 0 7rem 0;
 }
 
 .proyecto h1::after {
@@ -226,20 +226,6 @@ section {
   height: 100%;
 }
 
-/* ******************* */
-/* Modal de fotos proyecto */
-.profocus {
-  position: absolute;
-  top: 0;
-  left: 10rem;
-  width: 2.6rem;
-  height: 2.6rem;
-  border-radius: 50%;
-  background-color: var(--color-principal);
-  cursor: pointer;
-  z-index: 3;
-}
-
 .proyecto__contenedor_img {
   display: flex;
 }
@@ -248,8 +234,50 @@ section {
   width: 85vw;
   margin: auto;
   padding: 2rem 0;
-  color: #fff;
+  color: var(--color-bgc-secundario);
   font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
+}
+
+/* ******************* */
+/* focus - modal de fotos proyecto */
+.profocus {
+  position: absolute;
+  top: calc(52%);
+  left: calc(47%);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: var(--color-principal);
+  cursor: pointer;
+  z-index: 3;
+  animation: animate 5s linear infinite;
+}
+
+.profocus_1 {
+  top: calc(47%);
+  left: calc(18%);
+  background-color: var(--color-principal);
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(233, 181, 76, 0.793),
+      0 0 0 0 rgba(233, 181, 76, 0.793);
+  }
+  40% {
+    box-shadow: 0 0 0 30px rgba(233, 181, 76, 0.063),
+      0 0 0 0 rgba(233, 181, 76, 0.093);
+  }
+  80% {
+    box-shadow: 0 0 0 30px rgba(233, 181, 76, 0.063),
+      0 0 0 15px rgba(233, 181, 76, 0.093);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(233, 181, 76, 0.043),
+      0 0 0 15px rgba(233, 181, 76, 0.043);
+  }
 }
 
 /* ******************* */
@@ -275,6 +303,31 @@ section {
   transform: translate(-50%);
 }
 
+.amenidades__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.amenidades__container ul li {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.amenidades__container ul li span img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.amenidades__container ul li p {
+  color: var(--color-bgc-principal);
+  font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  line-height: 2.1;
+}
+
 /* ******************* */
 /* Planta */
 
@@ -298,24 +351,66 @@ section {
   transform: translate(-50%);
 }
 
-.planta_container {
-  width: 100vw;
-  min-height: 100vh;
+.container__planta {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 7rem 0;
+  gap: 3rem;
 }
 
 .planta_img {
-  width: 70%;
+  width: 60%;
+  position: relative;
 }
 
 .planta_img img {
   width: 100%;
 }
 
+/* ******************* */
+/* focus - modal de fotos planta */
+.plafocus {
+  position: absolute;
+  top: 58%;
+  left: 71%;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: var(--color-principal);
+  cursor: pointer;
+  z-index: 3;
+  animation: animate 5s linear infinite;
+}
+
+.plafocus_1 {
+  top: 26%;
+  left: 74%;
+}
+
+.plafocus_2 {
+  top: 47%;
+  left: 15%;
+}
+
+.plafocus_3 {
+  top: 50%;
+  left: 46%;
+}
+
+.plafocus_4 {
+  top: 23%;
+  left: 33%;
+}
+
+.plafocus_5 {
+  top: 85%;
+  left: 28%;
+}
+
 .planta_descripcion {
-  margin-top: 3rem;
-  color: #fff;
+  color: var(--color-bgc-secundario);
+  width: 40%;
 }
 
 .planta_descripcion h3 {
@@ -333,10 +428,10 @@ section {
 }
 
 .planta_descripcion ul li {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 2rem 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -348,14 +443,35 @@ section {
     scroll-behavior: smooth;
   }
 
-  .planta_container {
+  .amenidades__container {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 2rem;
   }
 
-  .planta_container {
-    min-height: 0;
+  .amenidades__container-funo {
+    min-width: 30rem;
+  }
+  .amenidades__container-fdos {
+    min-width: 30rem;
+  }
+  .amenidades__container-ftres {
+    min-width: 30rem;
+  }
+
+  .container__planta {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .planta_descripcion {
+    width: 80%;
+  }
+
+  .planta_img {
+    width: 90%;
   }
 }
 
@@ -377,4 +493,54 @@ section {
   .menu ul li {
     margin: 0.5rem 0;
   }
+}
+
+/* ******************* */
+/* focus - modal and overlay */
+.modal_close {
+  display: none;
+}
+
+.focus_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background-color: rgba(17, 17, 17, 0.691);
+}
+
+.focus_overlay .close {
+  position: absolute;
+  left: 85%;
+  top: 5%;
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #e9b44c;
+  cursor: pointer;
+}
+
+.focus_overlay .focus_modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 80vw;
+  height: 80vh;
+  z-index: 10010;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.focus_modal p {
+  font-size: 2.6rem;
+  color: crimson;
+  padding: 4rem;
+  text-align: center;
 }
