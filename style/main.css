@@ -247,13 +247,13 @@ html {
   transform: translateY(-5px);
 }
 
-.social li a .youtube {
+/* .social li a .youtube {
   fill: crimson;
 }
 
 .social li a .instagram {
   fill: darkmagenta;
-}
+} */
 
 .menu {
   position: absolute;
