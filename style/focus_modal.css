@@ -27,8 +27,8 @@
 /* focus - proyecto */
 .profocus {
   position: absolute;
-  top: 45%;
-  left: 50%;
+  top: 62%;
+  left: 68%;
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
@@ -39,8 +39,8 @@
 }
 
 .plantas {
-  top: 57%;
-  left: 17%;
+  top: 33%;
+  left: 40%;
 }
 
 /* ******************* */
