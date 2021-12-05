@@ -17,12 +17,11 @@
     <link rel="manifest" href="manifest.webmanifest" />
 
     <!-- CSS -->
-
-    <link rel="stylesheet" href="./style/normalize.css?Dic1" />
-    <link rel="stylesheet" href="./style/proyecto.css?Dic1" />
-    <link rel="stylesheet" href="./style/focus_modal.css?Dic1" />
-    <link rel="stylesheet" href="./style/galeria.css?Dic1" />
-    <link rel="stylesheet" href="./style/medias.css?Dic1" />
+    <link rel="stylesheet" href="./style/normalize.css?Dic2" />
+    <link rel="stylesheet" href="./style/proyecto.css?Dic2" />
+    <link rel="stylesheet" href="./style/focus_modal.css?Dic2" />
+    <link rel="stylesheet" href="./style/galeria.css?Dic2" />
+    <link rel="stylesheet" href="./style/medias.css?Dic2" />
 
     <!-- Ion Icons -->
     <script
@@ -80,12 +79,16 @@
       <h1>Etapa Isla Tortuga</h1>
       <div class="proyecto_img">
         <img
-          src="/img/proyecto/proyecto_maestro_01.jpeg"
+          src="/img/proyecto/sembrado.jpeg"
           alt="Proyecto Residencial Pacífico Diamante Isla Tortuga"
         />
         <!-- focus para abrir el lightbox -->
-        <!-- <span id="apublicas" class="profocus"></span>
-        <span id="plantas" class="profocus profocus_1"></span> -->
+        <a href="#amenidades_proyecto">
+          <span class="profocus"></span>
+        </a>
+        <a href="#planta">
+          <span class="profocus plantas"></span>
+        </a>
       </div>
       <div class="proyecto_descripcion">
         <p>
@@ -236,12 +239,12 @@
             alt="Planta Tipo Departamento Residencial Pacífico Diamante Isla Tortuga"
           />
           <!-- focus para abrir el lightbox -->
-          <!-- <span id="room" class="plafocus"></span>
-          <span id="room" class="plafocus plafocus_1"></span>
-          <span id="room" class="plafocus plafocus_2"></span>
-          <span id="room" class="plafocus plafocus_3"></span>
-          <span id="room" class="plafocus plafocus_4"></span>
-          <span id="room" class="plafocus plafocus_5"></span> -->
+          <span id="sala" class="plafocus"></span>
+          <span id="recamara" class="plafocus recamara"></span>
+          <span id="recamaraJr" class="plafocus recamaraJr"></span>
+          <span id="recamaraInd" class="plafocus recamaraInd"></span>
+          <span id="cocina" class="plafocus cocina"></span>
+          <span id="baño" class="plafocus baño"></span>
         </div>
         <div class="planta_descripcion">
           <h3>Distribución</h3>
@@ -294,38 +297,10 @@
       </div>
     </section>
 
-    <!-- Menú responsive - Hamburguesa -->
-    <div class="menu">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#proyecto">Proyecto</a></li>
-        <li><a href="#amenidades">Amenidades</a></li>
-        <li><a href="#planta">Planta</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#galeria">Avance de Obra</a></li>
-        <li>
-          <a
-            class="menu-link_contacto"
-            href="https://www.facebook.com/Pac%C3%ADfico-Diamante-103369688852418"
-            >Contáctanos</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <!-- Overlay apoyo para el menú responsive -->
-    <div class="overlay"></div>
-
-    <!-- focus - modal and overlay  -->
+    <!-- focus - Ligthbox planta  -->
     <div class="focus_overlay modal_close">
       <span class="close">X</span>
-      <div class="focus_modal">
-        <p>
-          ¡Hola! Algunas secciones de la página aún se encuentran en
-          construcción, agradecemos tu visita. Para más informes favor de
-          comunicarte a este número 744 131 6969 VENTAS - INFORMES
-        </p>
-      </div>
+      <div class="focus_modal"></div>
     </div>
 
     <!-- Sección Galería -->
@@ -333,68 +308,56 @@
       <h1>galería</h1>
       <div id="galery">
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/1_Interior.jpeg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/11_Interior.jpeg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/4_Interior.jpeg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/3_Interior.jpg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/5_Interior.jpg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/6_Interior.jpg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/7_Interior.jpg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/8_Interior.JPG"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/9_Interior.jpg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/10_Interior.JPG"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
 
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/12_Interior.jpeg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
           src="/img/proyecto/galeria/110_Exterior.jpg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          loading="lazy"
+          id="amenidades_proyecto"
           src="/img/proyecto/galeria/120_Exterior.jpeg"
           alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
         />
@@ -473,6 +436,7 @@
       </div>
     </section>
 
+    <!-- Ligthbox Galería -->
     <div id="contenedor-principal">
       <div id="contenedor-interno">
         <img
@@ -495,8 +459,30 @@
       <button id="btn-cierra" type="button">X</button>
     </div>
 
+    <!-- Menú responsive - Hamburguesa -->
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#amenidades">Amenidades</a></li>
+        <li><a href="#planta">Planta</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#galeria">Avance de Obra</a></li>
+        <li>
+          <a
+            class="menu-link_contacto"
+            href="https://www.facebook.com/Pac%C3%ADfico-Diamante-103369688852418"
+            >Contáctanos</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Overlay menú responsive -->
+    <div class="overlay"></div>
+
     <script src="/js/proyecto.js"></script>
-    <!-- <script src="/js/focus.js"></script> -->
+    <script src="/js/focus.js"></script>
     <script src="/js/galeria.js"></script>
   </body>
 </html>

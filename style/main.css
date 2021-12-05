@@ -19,6 +19,9 @@ html {
   font-size: 62.5%;
 }
 
+/* ******************* */
+/* Contenedor global */
+/* ******************* */
 .showcase {
   position: absolute;
   right: 0;
@@ -28,8 +31,8 @@ html {
   padding: 10rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
   background-color: #111;
   color: #fff;
   z-index: 2;
@@ -40,6 +43,9 @@ html {
   right: 30rem;
 }
 
+/* ******************* */
+/* Header Nav */
+/* ******************* */
 .showcase header {
   position: absolute;
   top: 0;
@@ -47,8 +53,8 @@ html {
   width: 100%;
   z-index: 9999;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 2.5rem 2rem;
 }
 
@@ -90,6 +96,7 @@ html {
   color: #e9b44c;
 }
 
+/* CTA */
 .nav_menu ul li a.menu-link_contacto {
   color: #e9b44c;
   font-weight: 600;
@@ -105,6 +112,7 @@ html {
   background-size: 2.5rem;
   background-position: center;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .showcase img {
@@ -137,10 +145,12 @@ html {
   background-color: rgba(17, 17, 17, 0.461);
 }
 
+/* ******************* */
+/* Contenedor texto */
+/* ******************* */
 .text {
   position: absolute;
   z-index: 10;
-  /* background-color: rgba(8, 65, 92, 0.226); */
   padding: 3rem 1.5rem;
   transition: all 0.3s ease-in-out;
 }
@@ -168,12 +178,12 @@ html {
   line-height: 1.6;
 }
 
+/* CTA */
 .text a {
   display: inline-flex;
   font-size: 1.2rem;
   font-weight: 800;
   text-decoration: none;
-  color: #333;
   color: #fff;
   width: 19rem;
   height: 4rem;
@@ -183,7 +193,6 @@ html {
   z-index: 2;
   align-items: center;
   justify-content: center;
-  /* background-color: #e9b44c; */
   border: #e9b44c 0.5px solid;
   overflow: hidden;
 }
@@ -207,10 +216,11 @@ html {
 .text a span {
   position: relative;
   z-index: 2;
-
-  /* transition: 0.3s ease all; */
 }
 
+/* ******************* */
+/* Iconos redes sociales */
+/* ******************* */
 .social {
   position: absolute;
   bottom: 50%;
@@ -218,8 +228,8 @@ html {
   transform: translate(0, 50%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   z-index: 9999;
   padding: 1.5rem;
@@ -247,14 +257,9 @@ html {
   transform: translateY(-5px);
 }
 
-/* .social li a .youtube {
-  fill: crimson;
-}
-
-.social li a .instagram {
-  fill: darkmagenta;
-} */
-
+/* ******************* */
+/* Menú responsive */
+/* ******************* */
 .menu {
   position: absolute;
   top: 0;
@@ -290,7 +295,6 @@ html {
 /* ******************* */
 /* Video y controles */
 /* ******************* */
-
 .showcase video {
   position: absolute;
   top: 0;

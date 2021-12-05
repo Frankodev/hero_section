@@ -1,14 +1,34 @@
 /** @format */
 
 /* ******************* */
-/* Focus, Overlay & Slide */
+/* Lightbox Planta */
 /* ******************* */
 
-/* focus - modal de fotos proyecto */
+/* focus - efecto pulsar */
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(233, 181, 76, 0.993),
+      0 0 0 0 rgba(233, 181, 76, 0.593);
+  }
+  40% {
+    box-shadow: 0 0 0 35px rgba(233, 181, 76, 0.063),
+      0 0 0 0 rgba(233, 181, 76, 0.963);
+  }
+  80% {
+    box-shadow: 0 0 0 35px rgba(233, 181, 76, 0.043),
+      0 0 0 15px rgba(233, 181, 76, 0.043);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(233, 181, 76, 0.013),
+      0 0 0 15px rgba(233, 181, 76, 0.013);
+  }
+}
+
+/* focus - proyecto */
 .profocus {
   position: absolute;
-  top: calc(52%);
-  left: calc(47%);
+  top: 45%;
+  left: 50%;
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
@@ -18,37 +38,17 @@
   animation: animate 5s linear infinite;
 }
 
-.profocus_1 {
-  top: calc(47%);
-  left: calc(18%);
-  background-color: var(--color-principal);
-}
-
-@keyframes animate {
-  0% {
-    box-shadow: 0 0 0 0 rgba(233, 181, 76, 0.793),
-      0 0 0 0 rgba(233, 181, 76, 0.793);
-  }
-  40% {
-    box-shadow: 0 0 0 30px rgba(233, 181, 76, 0.063),
-      0 0 0 0 rgba(233, 181, 76, 0.093);
-  }
-  80% {
-    box-shadow: 0 0 0 30px rgba(233, 181, 76, 0.063),
-      0 0 0 15px rgba(233, 181, 76, 0.093);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(233, 181, 76, 0.043),
-      0 0 0 15px rgba(233, 181, 76, 0.043);
-  }
+.plantas {
+  top: 57%;
+  left: 17%;
 }
 
 /* ******************* */
 /* focus - modal de fotos planta */
 .plafocus {
   position: absolute;
-  top: 58%;
-  left: 71%;
+  top: 53%;
+  left: 72%;
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
@@ -58,29 +58,29 @@
   animation: animate 5s linear infinite;
 }
 
-.plafocus_1 {
-  top: 26%;
-  left: 74%;
-}
-
-.plafocus_2 {
-  top: 47%;
-  left: 15%;
-}
-
-.plafocus_3 {
+.recamara {
   top: 50%;
+  left: 22%;
+}
+
+.recamaraJr {
+  top: 49%;
   left: 46%;
 }
 
-.plafocus_4 {
-  top: 23%;
-  left: 33%;
+.recamaraInd {
+  top: 25%;
+  left: 34%;
 }
 
-.plafocus_5 {
-  top: 85%;
-  left: 28%;
+.cocina {
+  top: 27%;
+  left: 78%;
+}
+
+.baño {
+  top: 23%;
+  left: 10%;
 }
 
 /* ******************* */
@@ -95,40 +95,43 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 10000;
-  background-color: rgba(17, 17, 17, 0.691);
+  z-index: 999;
+  background-color: rgba(17, 17, 17, 0.981);
 }
 
 .focus_overlay .close {
   position: absolute;
+  height: 4.8rem;
+  width: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 90%;
-  top: 8%;
+  top: 5%;
   font-size: 3.6rem;
-  font-weight: 500;
   color: #e9b44c;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .focus_overlay .focus_modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -50%);
   width: 80vw;
-  height: 80vh;
-  z-index: 10010;
+  height: auto;
+  max-height: 80vh;
+  z-index: 9999;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.focus_modal p {
-  font-size: 2.6rem;
-  color: crimson;
-  padding: 4rem;
-  text-align: center;
+.focus_modal img {
+  width: 100%;
+  height: auto;
 }

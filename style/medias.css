@@ -1,11 +1,29 @@
 /** @format */
 
-/* Landing Page */
+/* ******************* */
+/* Medias querys */
+/* ******************* */
+/* Break Point 1024px */
+@media only screen and (max-width: 1024px) {
+  .proyecto_img {
+    width: 80vw;
+  }
+
+  #galery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Break Point 798px */
 @media only screen and (max-width: 798px) {
   html {
     font-size: 56.25%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
-
+  /* Landing Page */
   .showcase,
   .showcase header {
     padding: 2rem;
@@ -24,8 +42,8 @@
     background-size: 3rem;
     background-position: center;
     cursor: pointer;
-
     display: flex;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   .text {
@@ -45,6 +63,7 @@
     max-width: 33rem;
   }
 
+  /* Controles audio */
   .control_audio {
     left: 2rem;
     bottom: 5rem;
@@ -52,6 +71,71 @@
   }
 }
 
+/* Break Point 768px */
+@media only screen and (max-width: 768px) {
+  .focus_overlay .close {
+    left: 85%;
+    top: 10%;
+  }
+
+  /* Amenidades */
+  .amenidades__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .amenidades__container-funo {
+    min-width: 30rem;
+  }
+  .amenidades__container-fdos {
+    min-width: 30rem;
+  }
+  .amenidades__container-ftres {
+    min-width: 30rem;
+  }
+
+  /* Planta */
+  .container__planta {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .planta_descripcion {
+    width: 80%;
+  }
+
+  .planta_img {
+    width: 90%;
+  }
+
+  /* Galería */
+  #galery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Break Point 480px */
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  /* funciona para quitar el logo al abrir menu hamburguesa */
+  .showBody .header .logo_img {
+    left: -30rem;
+  }
+
+  .focus_overlay .close {
+    left: 85%;
+    top: 10%;
+  }
+}
+
+/* Break Point 450px HEIGHT */
 @media only screen and (max-height: 450px) {
   .nav_menu {
     display: none;
@@ -66,15 +150,20 @@
     background-size: 3rem;
     background-position: center;
     cursor: pointer;
-
     display: flex;
   }
 
-  /* .btn_menu.active {
-    right: 27%;
-  } */
-
   .menu ul li {
     margin: 0.5rem 0;
+  }
+
+  #btn-cierra {
+    top: 3rem;
+    right: 1rem;
+  }
+
+  .focus_overlay .close {
+    left: 91%;
+    top: 10%;
   }
 }
