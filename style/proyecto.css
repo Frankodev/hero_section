@@ -343,8 +343,9 @@ section {
   margin: 0 2rem 0 0;
 }
 
-.planta_descripcion h3 {
-  font-size: 2.6rem;
+.planta_descripcion h2 {
+  font-size: 3.6rem;
+  color: var(--color-bgc-secundario);
   margin-bottom: 4rem;
 }
 
@@ -377,6 +378,12 @@ section {
   background-color: var(--color-bgc-secundario);
 }
 
+.footer h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 2rem 3rem 2rem;
+}
+
 /* ******************* */
 /* Footer contacto */
 /* ******************* */
@@ -407,12 +414,6 @@ section {
 
 .contacto ul li a .text_enlaces {
   margin-right: 0.5rem;
-}
-
-.footer h2 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 2rem 2rem 3rem 2rem;
 }
 
 /* ******************* */
