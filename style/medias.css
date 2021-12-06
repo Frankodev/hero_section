@@ -115,7 +115,27 @@
   #galery {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    min-width: 40rem;
     gap: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+  }
+
+  .footer .contacto,
+  .enlaces {
+    width: auto;
+    min-width: 24rem;
+    margin: 0 auto;
+  }
+
+  .footer_logo {
+    width: 60%;
   }
 }
 
@@ -132,6 +152,13 @@
   .focus_overlay .close {
     left: 85%;
     top: 10%;
+  }
+}
+
+/* Break Point 320px */
+@media only screen and (max-width: 320px) {
+  #galery {
+    min-width: 35rem;
   }
 }
 

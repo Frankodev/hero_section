@@ -364,3 +364,187 @@ section {
   align-items: flex-start;
   gap: 1rem;
 }
+
+/* ******************* */
+/* Footer */
+/* ******************* */
+.footer {
+  width: 100vw;
+  padding: 3rem 5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: var(--color-bgc-secundario);
+}
+
+/* ******************* */
+/* Footer contacto */
+/* ******************* */
+.contacto {
+  width: 30%;
+}
+
+.contacto ul {
+  list-style: none;
+}
+
+.contacto ul li {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+.contacto ul li a {
+  text-decoration: none;
+  color: var(--color-bgc-principal);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.contacto ul li a:hover {
+  background-color: var(--color-bgc-principal);
+  color: var(--color-bgc-secundario);
+}
+
+.contacto ul li a .text_enlaces {
+  margin-right: 0.5rem;
+}
+
+.footer h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 2rem 3rem 2rem;
+}
+
+/* ******************* */
+/* Footer enlaces */
+/* ******************* */
+.enlaces {
+  width: 30%;
+}
+
+.enlaces p {
+  font-size: 1.6rem;
+  padding: 0 0 0 2rem;
+  color: var(--color-bgc-principal);
+}
+
+/* ******************* */
+/* Footer redes sociales */
+/* ******************* */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  width: 2.6rem;
+  height: 2.6rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.ion_icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  fill: #fff;
+}
+
+.facebook {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #4267b2;
+}
+
+.instagram {
+  border-radius: 8px;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.youtube {
+  fill: crimson;
+}
+
+.social li a:hover {
+  transform: translateY(-5px);
+}
+
+.footer .webcreativa {
+  width: 16rem;
+  height: auto;
+  padding-left: 1.5rem;
+}
+
+.footer .webcreativa img {
+  width: 100%;
+}
+
+.icon-whatsapp,
+.icon-mail,
+.icon-map {
+  font-size: 1.6rem;
+}
+
+.icon-whatsapp {
+  color: #00bb2d;
+}
+
+.icon-mail {
+  fill: #97cb8b;
+}
+
+.icon-map {
+  color: var(--color-bgc-principal);
+}
+
+.contacto ul li a:hover .icon-map {
+  color: var(--color-bgc-secundario);
+}
+
+.icon-fon {
+  color: var(--color-bgc-principal);
+}
+
+.contacto ul li a:hover .icon-fon {
+  color: var(--color-bgc-secundario);
+}
+
+/* ******************* */
+/* Footer contacto */
+/* ******************* */
+.footer_logo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.footer_logo img {
+  width: 100%;
+  filter: brightness(40%);
+}
+
+/* ******************* */
+/* Footer aviso privacidad */
+/* ******************* */
+footer .copi {
+  width: 100vw;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: var(--color-bgc-principal);
+  color: var(--color-bgc-secundario);
+}
