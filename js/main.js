@@ -27,7 +27,6 @@ const volumen = document.querySelector("#muted");
 
 // función evento click para dar pause o play al video de fondo
 pause.addEventListener("click", () => {
-  // play();
   if (video.paused) {
     video.play();
     play.name = "pause-outline";
@@ -37,17 +36,8 @@ pause.addEventListener("click", () => {
   }
 });
 
-// function play() {
-//   if (video.paused) {
-//     video.play();
-//   } else {
-//     video.pause();
-//   }
-// }
-
 // función evento click para dar volumen o muted al video de fondo
 volumen.addEventListener("click", () => {
-  // mute();
   if (video.muted == true) {
     video.volume = 1;
     video.muted = false;
@@ -58,13 +48,3 @@ volumen.addEventListener("click", () => {
     muted.name = "volume-mute-outline";
   }
 });
-
-// function mute() {
-//   if (video.muted == true) {
-//     video.volume = 1;
-//     video.muted = false;
-//   } else {
-//     video.volume = 0;
-//     video.muted = true;
-//   }
-// }
