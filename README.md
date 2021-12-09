@@ -37,19 +37,20 @@ NOTA PARA MOSTRAR EN EL SITIO WEB: 27 de Nov del 2021, la Landing Page aun se en
   4.- HACER TODAS LAS PRUEBAS PARA CONFIRMAR DESPLIEGUE (hecho)
   -> ((COMPLETO TODO -> 8 Dic, 15:53pm))
 
-NOTAS adicionales posteriores al despliegue del dia 3 Nov 21 -> ((PENDIENTE TODO))
-1.- Hacer una función para que al terminar el video se quite y se ponga una imagen estatica de la alberca - es opcional no requerimiento del cliente.
-
-16:43pm -> video para hacer efecto de luz en botones para abrir overlay con fotos tarea 2: https://www.youtube.com/watch?v=r_RXm5NyBo0
-
-- Tareas 8 Dic 2021; ((PENDIENTE TODO -> 15:55pm)) #f1f
+- Tareas 8 Dic 2021; ((PENDIENTE TODO -> 15:55pm))
   1.- Iniciar la sección de Avance de Obra. (hecho)
   2.- Son de entre 3 a 4 fotos que se subiran en la primer sección del avance de la obra. (hecho)
-  3.- Optimizar las imagenes reducir el tamaño y el peso del archivo.
-  4.- HACER TODAS LAS PRUEBAS PARA CONFIRMAR DESPLIEGUE
+  3.- Optimizar las imagenes reducir el tamaño y el peso del archivo (hecho)
+  4.- HACER TODAS LAS PRUEBAS PARA CONFIRMAR DESPLIEGUE (hecho)
+  -> ((COMPLETO TODO -> 9 Dic, 16:05pm)) #f1f
 
-- Tareas 9 Dic 2021; ((PENDIENTE TODO -> 19:33pm)) #f1f
+- #f1f OPCIONAL #f1f - Tareas 9 Dic 2021; ((PENDIENTE TODO -> 19:33pm))
   1.- Hacer un filtro de imagenes en la Galería
   (Interior, Amenidades, Club de playa)
   2.- Al hacer click en el botón (Interior) solo salgan las del
   interior, y asi respectivamente.
+
+NOTAS adicionales posteriores al despliegue del dia 3 Nov 21 -> ((PENDIENTE TODO))
+1.- Hacer una función para que al terminar el video se quite y se ponga una imagen estatica de la alberca - es opcional no requerimiento del cliente.
+
+16:43pm -> video para hacer efecto de luz en botones para abrir overlay con fotos tarea 2: https://www.youtube.com/watch?v=r_RXm5NyBo0
