@@ -15,5 +15,4 @@ const hoverLink = function (e) {
 // función para eliminar los id´s en la barra de navegación
 links.forEach((link) => {
   link.addEventListener("click", hoverLink);
-  console.log("click en link");
 });

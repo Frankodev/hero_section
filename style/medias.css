@@ -119,6 +119,7 @@
     gap: 1rem;
   }
 
+  /* Footer */
   .footer {
     flex-direction: column;
     height: auto;

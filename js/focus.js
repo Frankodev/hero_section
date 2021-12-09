@@ -84,3 +84,37 @@ baño.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
   modal.classList.add("modal_close");
 });
+
+// Variebles ids fotos avance de obra
+const obraUno = document.getElementById("img_01");
+const obraDos = document.getElementById("img_02");
+const obraTres = document.getElementById("img_03");
+
+// función para abrir modal de planta en fotos de avance de obra
+obraUno.addEventListener("click", () => {
+  openModal();
+  contenedorImagen.innerHTML = `
+        <img
+          src="/img/proyecto/avance/11210_Exterior.jpeg"
+          alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
+        />
+  `;
+});
+obraDos.addEventListener("click", () => {
+  openModal();
+  contenedorImagen.innerHTML = `
+        <img
+           src="/img/proyecto/avance/12211_Exterior.jpeg"
+          alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
+        />
+  `;
+});
+obraTres.addEventListener("click", () => {
+  openModal();
+  contenedorImagen.innerHTML = `
+        <img
+           src="/img/proyecto/avance/12212_Exterior.jpeg"
+          alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
+        />
+  `;
+});

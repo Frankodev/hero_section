@@ -138,3 +138,40 @@ button span {
   top: 50%;
   right: 1rem;
 }
+
+/* ******************* */
+/* Sección Avance de Obra */
+/* ******************* */
+.avance {
+  background-color: var(--color-bgc-principal);
+  padding-bottom: 8rem;
+}
+
+.avance h1 {
+  color: var(--color-principal);
+  position: relative;
+}
+
+.avance h1::after {
+  content: "";
+  border-bottom: solid 1px var(--color-principal);
+  width: 20%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.avance h2 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--color-bgc-secundario);
+  margin: 2rem 0 1.6rem 0;
+}
+
+.avance .mb-2 {
+  margin-bottom: 2rem;
+}

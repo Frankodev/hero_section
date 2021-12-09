@@ -43,7 +43,13 @@ NOTAS adicionales posteriores al despliegue del dia 3 Nov 21 -> ((PENDIENTE TODO
 16:43pm -> video para hacer efecto de luz en botones para abrir overlay con fotos tarea 2: https://www.youtube.com/watch?v=r_RXm5NyBo0
 
 - Tareas 8 Dic 2021; ((PENDIENTE TODO -> 15:55pm)) #f1f
-  1.- Iniciar la sección de Avance de Obra.
-  2.- Son de entre 3 a 4 fotos que se subiran en la primer sección del avance de la obra.
+  1.- Iniciar la sección de Avance de Obra. (hecho)
+  2.- Son de entre 3 a 4 fotos que se subiran en la primer sección del avance de la obra. (hecho)
   3.- Optimizar las imagenes reducir el tamaño y el peso del archivo.
   4.- HACER TODAS LAS PRUEBAS PARA CONFIRMAR DESPLIEGUE
+
+- Tareas 9 Dic 2021; ((PENDIENTE TODO -> 19:33pm)) #f1f
+  1.- Hacer un filtro de imagenes en la Galería
+  (Interior, Amenidades, Club de playa)
+  2.- Al hacer click en el botón (Interior) solo salgan las del
+  interior, y asi respectivamente.

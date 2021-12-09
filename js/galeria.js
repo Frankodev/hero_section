@@ -1,5 +1,7 @@
 /** @format */
 
+// Galería de Imaganes
+
 // Variables
 const btnCierra = document.querySelector("#btn-cierra");
 const btnAdelanta = document.querySelector("#btn-adelanta");
@@ -9,7 +11,7 @@ const lightbox = document.querySelector("#contenedor-principal");
 const imagenActiva = document.querySelector("#img-activa");
 let indiceImagen = 0;
 
-// función para abir el lightbox
+// función para abir el lightbox galería
 const abreLightbox = function (event) {
   imagenActiva.src = event.target.src;
   lightbox.style.display = "flex";
