@@ -150,10 +150,6 @@
   html {
     font-size: 50%;
   }
-  /* funciona para quitar el logo al abrir menu hamburguesa */
-  .showBody .header .logo_img {
-    left: -30rem;
-  }
 
   .focus_overlay .close {
     left: 85%;

@@ -9,7 +9,7 @@
 :root {
   --color-principal: #e9b44c;
   --color-secundario: #444444;
-  --color-bgc-principal: #353535;
+  --color-bgc-principal: #232526;
   --color-bgc-secundario: #e5e2e2;
   --color-textos: #333333;
 }
@@ -32,13 +32,19 @@ body {
   overflow: hidden;
   scroll-behavior: smooth;
   position: relative;
+  transition: 0.5s all ease;
 }
 
 /* ******************* */
 /* Clase auxiliar para menú responsive */
 /* ******************* */
-.showBody {
+.show {
   right: 0;
+  transition: 0.5s all;
+}
+
+.show.showBody {
+  right: 30rem;
 }
 
 h1 {
@@ -68,7 +74,8 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(53, 53, 53, 0.301);
+  background-color: rgba(35, 37, 38, 0.301);
+  transition: 0.5s all;
 }
 
 .logo {
@@ -129,14 +136,14 @@ section {
   cursor: pointer;
 
   position: absolute;
-  right: 30rem;
+  right: 1.8rem;
   z-index: 9999;
 }
 
 .menu {
   position: fixed;
   top: 0;
-  right: -30rem;
+  right: 0;
   width: 30rem;
   height: 100vh;
   min-height: 100vh;
@@ -145,14 +152,7 @@ section {
   justify-content: center;
   background-color: darkgoldenrod;
 
-  display: none;
-}
-
-.active {
-  display: flex;
-  right: 0;
-  overflow: hidden;
-  z-index: 9999;
+  z-index: -1;
 }
 
 .menu ul {
