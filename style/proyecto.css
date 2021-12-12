@@ -203,7 +203,11 @@ section {
 /* ******************* */
 .proyecto {
   background-color: var(--color-bgc-principal);
-  padding-bottom: 8rem;
+  background: url(/img/conchas.png) var(--color-bgc-principal);
+  background-repeat: repeat;
+  background-size: 460px;
+  background-blend-mode: multiply;
+  padding: 14rem 0 8rem 0;
 }
 
 .proyecto h1 {
@@ -222,7 +226,7 @@ section {
 }
 
 .proyecto_img {
-  width: 85vw;
+  width: 80vw;
   margin: 3rem auto;
   z-index: 2;
   position: relative;
@@ -240,7 +244,7 @@ section {
 }
 
 .proyecto_descripcion {
-  width: 85vw;
+  width: 80vw;
   margin: auto;
   padding: 2rem 0 4rem 0;
   color: var(--color-bgc-secundario);
@@ -302,6 +306,10 @@ section {
 /* ******************* */
 .planta {
   background-color: var(--color-bgc-principal);
+  background: url(/img/conchas.png) var(--color-bgc-principal);
+  background-repeat: repeat;
+  background-size: 460px;
+  background-blend-mode: multiply;
   padding-bottom: 4rem;
 }
 
@@ -569,5 +577,9 @@ footer .copi {
   font-size: 1.4rem;
   text-align: center;
   background-color: var(--color-bgc-principal);
+  background: url(/img/conchas.png) var(--color-bgc-principal);
+  background-repeat: repeat;
+  background-size: 460px;
+  background-blend-mode: multiply;
   color: var(--color-bgc-secundario);
 }

@@ -144,6 +144,10 @@ button span {
 /* ******************* */
 .avance {
   background-color: var(--color-bgc-principal);
+  background: url(/img/conchas.png) var(--color-bgc-principal);
+  background-repeat: repeat;
+  background-size: 460px;
+  background-blend-mode: multiply;
   padding-bottom: 8rem;
 }
 
