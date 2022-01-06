@@ -144,6 +144,12 @@
   .footer_logo {
     width: 60%;
   }
+
+  /* ******************* */
+  /* Mensaje UX Video */
+  .mensaje_video {
+    display: block;
+  }
 }
 
 /* Break Point 480px */
@@ -155,6 +161,14 @@
   .focus_overlay .close {
     left: 85%;
     top: 10%;
+  }
+
+  .text {
+    top: 25%;
+  }
+
+  .social {
+    bottom: 62%;
   }
 }
 

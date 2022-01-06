@@ -337,3 +337,15 @@ html {
   height: 2.6rem;
   cursor: pointer;
 }
+
+/* ******************* */
+/* Mensaje UX Video */
+/* ******************* */
+.mensaje_video {
+  display: none;
+  position: absolute;
+  bottom: 12rem;
+  right: 50%;
+  transform: translate(50%, 50%);
+  text-align: center;
+}
