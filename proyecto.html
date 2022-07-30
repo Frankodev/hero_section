@@ -17,11 +17,10 @@
     <link rel="manifest" href="manifest.webmanifest" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./style/normalize.css?Ene2" />
-    <link rel="stylesheet" href="./style/proyecto.css?Ene2" />
-    <link rel="stylesheet" href="./style/focus_modal.css?Ene2" />
-    <link rel="stylesheet" href="./style/galeria.css?Ene2" />
-    <link rel="stylesheet" href="./style/medias.css?Ene2" />
+    <link rel="stylesheet" href="./style/normalize.css?Jul22" />
+    <link rel="stylesheet" href="./style/proyecto.css?Jul22" />
+    <link rel="stylesheet" href="./style/galeria.css?Jul22" />
+    <link rel="stylesheet" href="./style/medias.css?Jul22" />
 
     <!-- Ion Icons -->
     <script
@@ -56,7 +55,7 @@
       <!-- Menú Barra -->
       <nav class="nav_menu">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="https://pacificodiamante.mx">Inicio</a></li>
           <li><a class="link" href="#proyecto">Proyecto</a></li>
           <li><a class="link" href="#amenidades">Amenidades</a></li>
           <li><a class="link" href="#planta">Planta</a></li>
@@ -78,19 +77,15 @@
           src="/img/proyecto/sembrado.jpeg"
           alt="Proyecto Residencial Pacífico Diamante Isla Tortuga"
         />
-        <!-- focus para abrir el lightbox -->
-        <div class="profocus plantas">
-          <a class="link" href="#planta">Panta </a>
-        </div>
       </div>
       <div class="proyecto_descripcion">
         <p>
-          PACÍFICO DIAMANTE está ubicado en una de las zonas con más alta
-          plusvalía y prestigio de Acapulco, en la Riviera Diamante, en esta
-          zona se encuentran plazas comerciales y tiendas de lujo, así como
-          centros de entretenimiento donde realizán conciertos artistas de talla
-          internacional, te encontrarás a 5 minutos de la playa y 10 minutos del
-          Aeropuerto Internacional de Acapulco.
+          Pacífico Diamante Residencial está ubicado en una de las zonas con más
+          alta plusvalía y prestigio de Acapulco, en la Riviera Diamante, en
+          esta zona se encuentran plazas comerciales y tiendas de lujo, así como
+          centros de entretenimiento donde realizan conciertos artistas de talla
+          internacional, vive y disfruta la exclusividad de su club de playa
+          privado.
         </p>
       </div>
     </section>
@@ -117,7 +112,7 @@
                   alt="Vacaciones Pacífico Diamante"
                 />
               </span>
-              <p>Pool Bar</p>
+              <p>Palapa y Pool Bar</p>
             </li>
             <li>
               <span>
@@ -126,7 +121,7 @@
                   alt="Tinas de hidromasaje Pacífico Diamante"
                 />
               </span>
-              <p>Dos Tinas de Hidromasaje</p>
+              <p>Tres Tinas de Hidromasaje</p>
             </li>
             <li>
               <span>
@@ -135,7 +130,7 @@
                   alt="Asoleaderos y palapa Pacífico Diamante"
                 />
               </span>
-              <p>Asoleaderos y Palapa</p>
+              <p>Asoleaderos y Camas</p>
             </li>
           </ul>
         </div>
@@ -224,26 +219,27 @@
 
     <!-- Sección Planta -->
     <section id="planta" class="container planta">
-      <h1>Planta Tipo</h1>
+      <h1>Plantas Tipo</h1>
+      <div class="plantas">
+        <button class="plantas__prototipo plantas__active" id="pb">
+          Planta Baja
+        </button>
+        <button class="plantas__prototipo" id="n1">1°N y 2°N</button>
+        <button class="plantas__prototipo" id="ph">Penthouse</button>
+      </div>
       <main class="container__planta">
-        <div class="planta_img">
+        <div class="planta_img" id="divph">
           <img
-            src="/img/proyecto/p1-pb-PhotoRoom.png"
+            id="plantas"
+            src="/img/proyecto/pb.png"
             alt="Planta Tipo Departamento Residencial Pacífico Diamante Isla Tortuga"
           />
           <div class="planta_medidas">
             <span>
               <ion-icon class="size" name="move-outline"></ion-icon>
             </span>
-            <p>Desde 137 m<span class="m2">2</span> de superficie</p>
+            <p id="m2">142 m<sup class="m2">2</sup> de superficie</p>
           </div>
-          <!-- focus para abrir el lightbox -->
-          <span id="sala" class="plafocus"></span>
-          <span id="recamara" class="plafocus recamara"></span>
-          <span id="recamaraJr" class="plafocus recamaraJr"></span>
-          <span id="recamaraInd" class="plafocus recamaraInd"></span>
-          <span id="cocina" class="plafocus cocina"></span>
-          <span id="baño" class="plafocus baño"></span>
         </div>
         <div class="planta_descripcion">
           <h2>Distribución</h2>
@@ -264,7 +260,7 @@
               <span>
                 <ion-icon name="checkmark-outline"></ion-icon>
               </span>
-              Estancia / Comedor con ventanal panorámico
+              Estancia | Comedor con ventanal panorámico
             </li>
             <li>
               <span>
@@ -276,7 +272,8 @@
               <span>
                 <ion-icon name="checkmark-outline"></ion-icon>
               </span>
-              Increíble terraza con zona húmeda
+              Increíble terraza
+              <p id="terraza">con zona húmeda</p>
             </li>
             <li>
               <span>
@@ -284,7 +281,7 @@
               </span>
               Área de lavado
             </li>
-            <li>
+            <li id="roof">
               <span>
                 <ion-icon name="checkmark-outline"></ion-icon>
               </span>
@@ -292,120 +289,201 @@
               de asoleadero y medio baño
             </li>
           </ul>
+          <div>
+            <h2>Inversión</h2>
+            <div class="planta_precio" id="precio">
+              <p><span>$</span> 4,190,000 <span>MXN</span></p>
+            </div>
+          </div>
         </div>
       </main>
     </section>
 
     <!-- focus - Ligthbox planta  -->
-    <div class="focus_overlay modal_close">
+    <!-- <div class="focus_overlay modal_close">
       <span class="close">X</span>
       <div class="focus_modal"></div>
-    </div>
+    </div> -->
 
     <!-- Sección Galería -->
     <section id="galeria" class="container galeria">
       <h1>galería</h1>
-      <main id="galery">
-        <img
-          src="/img/proyecto/galeria/1_Interior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/11_Interior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/4_Interior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/3_Interior.jpg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/8_Interior.JPG"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/6_Interior.jpg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/7_Interior.jpg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/5_Interior.jpg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/9_Interior.jpg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/10_Interior.JPG"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-
-        <img
-          src="/img/proyecto/galeria/12_Interior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/110_Exterior.jpg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/120_Exterior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/130_Exterior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/140_Exterior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/150_Exterior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/160_Exterior.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-
-        <img
-          src="/img/proyecto/galeria/club_playa05.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/club_playa03.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/club_playa07.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/club_playa04.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-
-        <img
-          src="/img/proyecto/galeria/club_playa08.jpg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/club_playa09.jpg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-        <img
-          src="/img/proyecto/galeria/club_playa01.jpeg"
-          alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
-        />
-      </main>
+      <div class="container-slider">
+        <div class="slider" id="slider">
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/1_Interior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/11_Interior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/4_Interior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/3_Interior.jpg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/8_Interior.JPG"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/6_Interior.jpg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/5_Interior.jpg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/9_Interior.jpg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/12_Interior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/110_Exterior.jpg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/120_Exterior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/130_Exterior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/140_Exterior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/150_Exterior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/160_Exterior.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/club_playa05.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/club_playa03.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/club_playa07.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/club_playa04.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/club_playa08.jpg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/club_playa09.jpg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="/img/proyecto/galeria/club_playa01.jpeg"
+              alt="Galería de Imagenes de Pacífico Diamante Etapa Isla Tortuga"
+            />
+          </div>
+        </div>
+        <button
+          class="slider__btn slider__btn--left"
+          type="button"
+          id="btn-left"
+        >
+          <span class="btn-span">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </span>
+        </button>
+        <button
+          class="slider__btn slider__btn--right"
+          type="button"
+          id="btn-right"
+        >
+          <span class="btn-span">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </span>
+        </button>
+      </div>
     </section>
 
     <!-- Ligthbox Galería -->
@@ -434,41 +512,39 @@
     <!-- Sección Avance de Obra -->
     <section id="avance" class="container avance">
       <h1>Avance de Obra</h1>
-      <h2>Enero – Diciembre 2021</h2>
+      <h2>Octubre – Diciembre 2021</h2>
+
       <main id="galery" class="mb-2">
         <img
-          id="img_01"
           src="/img/proyecto/avance/11210_Exterior.jpeg"
           alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          id="img_02"
           src="/img/proyecto/avance/12211_Exterior.jpeg"
           alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          id="img_03"
           src="/img/proyecto/avance/12212_Exterior.jpeg"
           alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
         />
       </main>
 
       <!-- subsección 2 para continuar con el vance de obra en el 2022 (ene - mar 2022) -->
-      <!-- <h2>Enero – Marzo 2022</h2>
+      <h2>Enero – Marzo 2022</h2>
       <main id="galery" class="mb-2">
         <img
-          src="/img/proyecto/avance/11210_Exterior.jpeg"
+          src="/img/proyecto/avance/obra_1.jpeg"
           alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          src="/img/proyecto/avance/12211_Exterior.jpeg"
+          src="/img/proyecto/avance/obra_2.jpeg"
           alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
         />
         <img
-          src="/img/proyecto/avance/12212_Exterior.jpeg"
+          src="/img/proyecto/avance/obra_3.jpeg"
           alt="Avance de Obra de Pacífico Diamante Etapa Isla Tortuga"
         />
-      </main> -->
+      </main>
     </section>
 
     <!-- Sección Footer -->
@@ -564,7 +640,7 @@
           <p>Diseño y desarrollo Web</p>
           <a href="https://webcreativa.mx">
             <div class="webcreativa">
-              <img src="/img/logo_web.png" alt="webcreativa.mx" />
+              <img src="/img/proyecto/logo_negativo.svg" alt="webcreativa.mx" />
             </div>
           </a>
         </div>
@@ -573,12 +649,12 @@
         </div>
       </div>
       <p class="copi">
-        Copyright | © Pacífico Diamante 2021 Derechos reservados
+        Copyright © Pacífico Diamante 2022 | Terminos y condiciones
       </p>
     </footer>
 
     <div class="whatsapp">
-      <a target="_blanck" href="https://wa.me/c/5217441316969">
+      <a target="_blanck" href="https://wa.me/5217441316969">
         <ion-icon name="logo-whatsapp"></ion-icon>
       </a>
     </div>
@@ -586,7 +662,7 @@
     <!-- Menú responsive - Hamburguesa -->
     <div class="menu">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="https://pacificodiamante.mx">Inicio</a></li>
         <li><a class="link" href="#proyecto">Proyecto</a></li>
         <li><a class="link" href="#amenidades">Amenidades</a></li>
         <li><a class="link" href="#planta">Planta</a></li>
@@ -602,8 +678,9 @@
     <div class="overlay"></div>
 
     <script src="/js/proyecto.js"></script>
-    <script src="/js/focus.js"></script>
     <script src="/js/galeria.js"></script>
     <script src="/js/hoverlinks.js"></script>
+    <script src="/js/plantas.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>

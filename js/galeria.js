@@ -1,6 +1,6 @@
 /** @format */
 
-// Galería de Imaganes
+// Galería de Imagenes
 
 // Variables
 const btnCierra = document.querySelector("#btn-cierra");
@@ -11,7 +11,7 @@ const lightbox = document.querySelector("#contenedor-principal");
 const imagenActiva = document.querySelector("#img-activa");
 let indiceImagen = 0;
 
-// función para abir el lightbox galería
+// función para abrir el lightbox galería
 const abreLightbox = function (event) {
   imagenActiva.src = event.target.src;
   lightbox.style.display = "flex";
@@ -38,7 +38,7 @@ const adelantaImagen = function () {
 
 btnAdelanta.addEventListener("click", adelantaImagen);
 
-// finción para retroceder imagen
+// función para retroceder imagen
 const retrocedeImagen = function () {
   if (indiceImagen === 0) {
     indiceImagen = imagenes.length;

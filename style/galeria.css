@@ -53,7 +53,6 @@
   width: 100%;
   height: auto;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 /* Contenedor Principal */
@@ -71,7 +70,7 @@
 }
 
 #contenedor-interno {
-  width: 80vw;
+  width: 90vw;
   height: 90vh;
   overflow: hidden;
   display: flex;
@@ -100,12 +99,13 @@ button {
 
 #btn-cierra {
   position: absolute;
-  top: 3rem;
-  right: 4rem;
+  top: 3%;
+  right: 3%;
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
   font-size: 3.6rem;
+  background-color: #232526;
   color: #e9b44c;
   font-weight: 400;
   z-index: 9999;
@@ -121,6 +121,11 @@ button {
   background-color: rgba(0, 0, 0, 0.562);
   transform: translate(0, -50%);
   z-index: 999;
+}
+
+#btn-retrocede:hover,
+#btn-adelanta:hover {
+  background-color: #232526;
 }
 
 button span {
@@ -168,7 +173,7 @@ button span {
 
 .avance h2 {
   font-size: 2.4rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.75px;
   line-height: 1.6;
   text-align: center;

@@ -12,17 +12,23 @@ btn_menu.addEventListener("click", function () {
   btn_menu.classList.toggle("active");
   menu.classList.toggle("active");
   show.classList.toggle("showBody");
+
   overlay.classList.toggle("active_overlay");
 });
 
 // función para cerrar menú al hacer click en un enlace
+
 navLinks.forEach((link) => {
   link.addEventListener("click", function () {
     // menu.classList.remove("active");
     btn_menu.classList.toggle("active");
     menu.classList.toggle("active");
-    show.classList.toggle("showBody");
-    overlay.classList.remove("active_overlay");
+
+    // setTimeout para que la ventana del menú se cierre con 1 minuto de retardo.
+    setTimeout(() => {
+      show.classList.toggle("showBody");
+      overlay.classList.remove("active_overlay");
+    }, 1000);
   });
 });
 

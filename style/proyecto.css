@@ -40,7 +40,7 @@ body {
 /* ******************* */
 .show {
   right: 0;
-  transition: 0.5s all;
+  transition: 0.3s all;
 }
 
 .show.showBody {
@@ -328,18 +328,47 @@ section {
   transform: translate(-50%);
 }
 
+.plantas {
+  width: 100%;
+
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+
+.plantas__prototipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
+  height: 4.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-bgc-principal);
+  background-color: var(--color-bgc-secundario);
+  cursor: pointer;
+}
+
+.plantas__active {
+  background-color: var(--color-principal);
+  color: var(--color-bgc-principal);
+}
+
 .container__planta {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 7rem 0;
+  margin: 7rem 0 7rem 0;
   gap: 1rem;
+
+  /* padding-top: 5rem; */
 }
 
 .planta_medidas {
   display: flex;
   align-items: center;
-  margin: 1rem;
+  justify-content: center;
+
   gap: 0.5rem;
 }
 
@@ -376,11 +405,12 @@ section {
 .planta_descripcion h2 {
   font-size: 3.6rem;
   color: var(--color-bgc-secundario);
-  margin-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .planta_descripcion ul {
   list-style: none;
+  padding-bottom: 2rem;
 }
 
 .planta_descripcion ul li span {
@@ -394,6 +424,26 @@ section {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+}
+
+#roof {
+  display: none;
+}
+
+.planta_precio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.planta_precio p {
+  font-size: 2.6rem;
+  color: var(--color-principal);
+}
+
+.planta_precio span {
+  font-size: 2.1rem;
 }
 
 /* ******************* */
@@ -514,7 +564,7 @@ section {
 }
 
 .footer .webcreativa {
-  width: 16rem;
+  width: 18rem;
   height: auto;
   padding-left: 1.5rem;
 }
@@ -582,4 +632,66 @@ footer .copi {
   background-size: 460px;
   background-blend-mode: multiply;
   color: var(--color-bgc-secundario);
+}
+
+/* ******************* */
+/* Slider de la galería */
+/* ******************* */
+
+.container-slider {
+  width: 80%;
+  max-width: 900px;
+  overflow: hidden;
+  position: relative;
+
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  width: 2200%;
+  height: 520px;
+  margin-left: -100%;
+}
+
+.slider__section {
+  width: 100%;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.slider__btn {
+  position: absolute;
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.562);
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 9;
+}
+
+.btn-span {
+  color: #f2f2f2;
+}
+
+.slider__btn:hover {
+  background-color: #232526;
+}
+
+.slider__btn--left {
+  left: 10px;
+}
+
+.slider__btn--right {
+  right: 10px;
 }
