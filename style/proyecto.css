@@ -454,6 +454,7 @@ section {
   padding: 3rem 5rem;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 2rem;
   background-color: var(--color-bgc-secundario);
 }
@@ -494,6 +495,11 @@ section {
 
 .contacto ul li a .text_enlaces {
   margin-right: 0.5rem;
+}
+
+.domicilio_oficinas {
+  padding: 1rem 2rem;
+  /* margin-left: 2rem; */
 }
 
 /* ******************* */
@@ -647,9 +653,10 @@ footer .copi {
   margin: auto;
 }
 
+/* archivo slider.js */
 .slider {
   display: flex;
-  width: 2200%;
+  width: 2700%;
   height: 520px;
   margin-left: -100%;
 }
@@ -694,4 +701,56 @@ footer .copi {
 
 .slider__btn--right {
   right: 10px;
+}
+
+/* contenedor__avance-obra */
+.contenedor__avance-obra {
+  max-width: 130rem;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 1.5rem;
+}
+
+.avance__obra {
+  width: 33%;
+}
+
+/* Carrusel Obra */
+.carrusel__obra {
+  position: relative;
+  max-height: 26rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.carrusel {
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.carruno,
+.carrdos,
+.carrtres {
+  width: 100%;
+}
+
+.obrauno,
+.obrados,
+.obratres {
+  position: relative;
+  display: flex;
+  width: 342.66px;
+  border-radius: 4px;
+}
+
+.obrauno,
+.obrados,
+.obratres img {
+  min-width: 100%;
+  width: inherit;
+  height: auto;
+  object-fit: cover;
 }

@@ -1,6 +1,7 @@
 /** @format */
 
 const slider = document.getElementById("slider");
+// al cambiar el tamaño del slider (más o menos imágenes), cambiar también el width del slider en el css (proyecto) en la linea 656 la clase (.slider)
 let sliderSection = document.querySelectorAll(".slider__section");
 let sliderSectionLast = sliderSection[sliderSection.length - 1];
 

@@ -14,6 +14,18 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  .contenedor__avance-obra {
+    flex-direction: column;
+  }
+
+  .avance__obra {
+    width: 75%;
+  }
+
+  .carrusel__obra {
+    max-height: 100%;
+  }
 }
 
 /* Break Point 798px */
@@ -178,6 +190,14 @@
   .social {
     bottom: 62%;
   }
+
+  .contenedor__avance-obra {
+    width: 100%;
+  }
+
+  .avance__obra {
+    width: 80%;
+  }
 }
 
 /* Break Point 320px */
@@ -223,8 +243,8 @@
 /* Whatsapp */
 .whatsapp {
   position: fixed;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 4rem;
+  right: 2rem;
   width: 5.6rem;
   height: 5.6rem;
   display: flex;

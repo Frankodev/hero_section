@@ -282,6 +282,10 @@ html {
   list-style: none;
 }
 
+.menu ul li {
+  margin: 1rem 0;
+}
+
 .menu ul li a {
   text-decoration: none;
   font-size: 2.6rem;
