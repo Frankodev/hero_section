@@ -83,3 +83,30 @@ const handleMargenLTres = function () {
 
 btnRightTres.addEventListener("click", handleMargenRTres);
 btnLeftTres.addEventListener("click", handleMargenLTres);
+
+const btnLeftCuatro = document.getElementById("leftcuatro");
+const btnRightCuatro = document.getElementById("rightcuatro");
+const carruselCuatro = document.getElementById("ccuatro");
+
+const handleMargenRCuatro = function () {
+  if (margenTres == 0) {
+    carruselCuatro.style.transform = "translateX(-100%)";
+    margenTres = 1;
+  } else if (margenTres == 1 || margenTres == 3) {
+    carruselCuatro.style.transform = "translateX(-200%)";
+    margenTres = 2;
+  }
+};
+
+const handleMargenLCuatro = function () {
+  if (margenTres == 2) {
+    carruselCuatro.style.transform = "translateX(-100%)";
+    margenTres = 3;
+  } else if (margenTres == 3 || margenTres == 1) {
+    carruselCuatro.style.transform = "translateX(0)";
+    margenTres = 0;
+  }
+};
+
+btnRightCuatro.addEventListener("click", handleMargenRCuatro);
+btnLeftCuatro.addEventListener("click", handleMargenLCuatro);
