@@ -110,3 +110,63 @@ const handleMargenLCuatro = function () {
 
 btnRightCuatro.addEventListener("click", handleMargenRCuatro);
 btnLeftCuatro.addEventListener("click", handleMargenLCuatro);
+
+// Carrusel marzo - cinco
+const btnLeftCinco = document.getElementById("leftcinco");
+const btnRightCinco = document.getElementById("rightcinco");
+const carruselCinco = document.getElementById("ccinco");
+let margenCinco = 0;
+
+
+const handleMargenRCinco = function () {
+  if (margenCinco == 0) {
+    carruselCinco.style.transform = "translateX(-100%)";
+    margenCinco = 1;
+  } else if (margenCinco == 1 || margenCinco == 3) {
+    carruselCinco.style.transform = "translateX(-200%)";
+    margenCinco = 2;
+  }
+};
+
+const handleMargenLCinco = function () {
+  if (margenCinco == 2) {
+    carruselCinco.style.transform = "translateX(-100%)";
+    margenCinco = 3;
+  } else if (margenCinco == 3 || margenCinco == 1) {
+    carruselCinco.style.transform = "translateX(0)";
+    margenCinco = 0;
+  }
+};
+
+btnRightCinco.addEventListener("click", handleMargenRCinco);
+btnLeftCinco.addEventListener("click", handleMargenLCinco);
+
+// Carrusel abil - seis
+const btnLeftSeis = document.getElementById("leftseis");
+const btnRightSeis = document.getElementById("rightseis");
+const carruselSeis = document.getElementById("cseis");
+let margenSeis = 0;
+
+
+const handleMargenRSeis = function () {
+  if (margenSeis == 0) {
+    carruselSeis.style.transform = "translateX(-100%)";
+    margenSeis = 1;
+  } else if (margenSeis == 1 || margenSeis == 3) {
+    carruselSeis.style.transform = "translateX(-200%)";
+    margenSeis = 2;
+  }
+};
+
+const handleMargenLSeis = function () {
+  if (margenSeis == 2) {
+    carruselSeis.style.transform = "translateX(-100%)";
+    margenSeis = 3;
+  } else if (margenSeis == 3 || margenSeis == 1) {
+    carruselSeis.style.transform = "translateX(0)";
+    margenSeis = 0;
+  }
+};
+
+btnRightSeis.addEventListener("click", handleMargenRSeis);
+btnLeftSeis.addEventListener("click", handleMargenLSeis);
