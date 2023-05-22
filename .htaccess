@@ -1,4 +1,4 @@
 <IfModule mod_headers.c>
 Header set Access-Control-Allow-Origin "*"
-Referrer-Policy: origin
+Header set Referrer-Policy: origin
 </IfModule>
