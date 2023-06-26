@@ -28,6 +28,7 @@ const handleMargenLUno = function () {
 btnRightUno.addEventListener("click", handleMargenRUno);
 btnLeftUno.addEventListener("click", handleMargenLUno);
 
+// Carrusel 2
 const btnLeftDos = document.getElementById("leftDos");
 const btnRightDos = document.getElementById("rightDos");
 const carruselDos = document.getElementById("cdos");
@@ -56,6 +57,7 @@ const handleMargenLDos = function () {
 btnRightDos.addEventListener("click", handleMargenRDos);
 btnLeftDos.addEventListener("click", handleMargenLDos);
 
+// Carrusel 3
 const btnLeftTres = document.getElementById("leftTres");
 const btnRightTres = document.getElementById("rightTres");
 const carruselTres = document.getElementById("ctres");
@@ -84,34 +86,37 @@ const handleMargenLTres = function () {
 btnRightTres.addEventListener("click", handleMargenRTres);
 btnLeftTres.addEventListener("click", handleMargenLTres);
 
+// Carrusel 4
 const btnLeftCuatro = document.getElementById("leftcuatro");
 const btnRightCuatro = document.getElementById("rightcuatro");
 const carruselCuatro = document.getElementById("ccuatro");
+let margenCuatro = 0;
+
 
 const handleMargenRCuatro = function () {
-  if (margenTres == 0) {
+  if (margenCuatro == 0) {
     carruselCuatro.style.transform = "translateX(-100%)";
-    margenTres = 1;
-  } else if (margenTres == 1 || margenTres == 3) {
+    margenCuatro = 1;
+  } else if (margenCuatro == 1 || margenCuatro == 3) {
     carruselCuatro.style.transform = "translateX(-200%)";
-    margenTres = 2;
+    margenCuatro = 2;
   }
 };
 
 const handleMargenLCuatro = function () {
-  if (margenTres == 2) {
+  if (margenCuatro == 2) {
     carruselCuatro.style.transform = "translateX(-100%)";
-    margenTres = 3;
-  } else if (margenTres == 3 || margenTres == 1) {
+    margenCuatro = 3;
+  } else if (margenCuatro == 3 || margenCuatro == 1) {
     carruselCuatro.style.transform = "translateX(0)";
-    margenTres = 0;
+    margenCuatro = 0;
   }
 };
 
 btnRightCuatro.addEventListener("click", handleMargenRCuatro);
 btnLeftCuatro.addEventListener("click", handleMargenLCuatro);
 
-// Carrusel marzo - cinco
+// Carrusel 5
 const btnLeftCinco = document.getElementById("leftcinco");
 const btnRightCinco = document.getElementById("rightcinco");
 const carruselCinco = document.getElementById("ccinco");
@@ -141,7 +146,7 @@ const handleMargenLCinco = function () {
 btnRightCinco.addEventListener("click", handleMargenRCinco);
 btnLeftCinco.addEventListener("click", handleMargenLCinco);
 
-// Carrusel abil - seis
+// Carrusel 6
 const btnLeftSeis = document.getElementById("leftseis");
 const btnRightSeis = document.getElementById("rightseis");
 const carruselSeis = document.getElementById("cseis");
@@ -170,3 +175,33 @@ const handleMargenLSeis = function () {
 
 btnRightSeis.addEventListener("click", handleMargenRSeis);
 btnLeftSeis.addEventListener("click", handleMargenLSeis);
+
+// Carrusel 7
+const btnLeftSiete = document.getElementById("leftsiete");
+const btnRightSiete = document.getElementById("rightsiete");
+const carruselSiete = document.getElementById("csiete");
+let margenSiete = 0;
+
+
+const handleMargenRSiete = function () {
+  if (margenSiete == 0) {
+    carruselSiete.style.transform = "translateX(-100%)";
+    margenSiete = 1;
+  } else if (margenSiete == 1 || margenSiete == 3) {
+    carruselSiete.style.transform = "translateX(-200%)";
+    margenSiete = 2;
+  }
+};
+
+const handleMargenLSiete = function () {
+  if (margenSiete == 2) {
+    carruselSiete.style.transform = "translateX(-100%)";
+    margenSiete = 3;
+  } else if (margenSiete == 3 || margenSiete == 1) {
+    carruselSiete.style.transform = "translateX(0)";
+    margenSiete = 0;
+  }
+};
+
+btnRightSiete.addEventListener("click", handleMargenRSiete);
+btnLeftSiete.addEventListener("click", handleMargenLSiete);
