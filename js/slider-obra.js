@@ -205,3 +205,33 @@ const handleMargenLSiete = function () {
 
 btnRightSiete.addEventListener("click", handleMargenRSiete);
 btnLeftSiete.addEventListener("click", handleMargenLSiete);
+
+// Carrusel 8
+const btnLeftOcho = document.getElementById("leftocho");
+const btnRightOcho = document.getElementById("rightocho");
+const carruselOcho = document.getElementById("cocho");
+let margenOcho = 0;
+
+
+const handleMargenROcho = function () {
+  if (margenOcho == 0) {
+    carruselOcho.style.transform = "translateX(-100%)";
+    margenOcho = 1;
+  } else if (margenOcho == 1 || margenOcho == 3) {
+    carruselOcho.style.transform = "translateX(-200%)";
+    margenOcho = 2;
+  }
+};
+
+const handleMargenLOcho = function () {
+  if (margenOcho == 2) {
+    carruselOcho.style.transform = "translateX(-100%)";
+    margenOcho = 3;
+  } else if (margenOcho == 3 || margenOcho == 1) {
+    carruselOcho.style.transform = "translateX(0)";
+    margenOcho = 0;
+  }
+};
+
+btnRightOcho.addEventListener("click", handleMargenROcho);
+btnLeftOcho.addEventListener("click", handleMargenLOcho);
