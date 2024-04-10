@@ -1,5 +1,10 @@
 /** @format */
 
+window.addEventListener('load', () => {
+  console.log('pagina cargada')
+  // location.reload()
+}) 
+
 // variables
 const btn_menu = document.querySelector(".btn_menu");
 const menu = document.querySelector(".menu");
