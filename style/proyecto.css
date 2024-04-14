@@ -74,8 +74,10 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(35, 37, 38, 0.301);
+  background-color: rgba(35, 37, 38, 0.601);
   transition: 0.5s all;
+
+  backdrop-filter: blur(0.5rem);
 }
 
 .logo {
